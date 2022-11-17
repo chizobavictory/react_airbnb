@@ -11,9 +11,9 @@ const Card = (props)=> {
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={"/images/"+ props.item.coverImg} className="card--photo"/>
+            <img src={"/images/"+ props.item.coverImg} className="card--photo" alt=""/>
             <div className="card--stats">
-                <img src={Star} className="card--star"/>
+                <img src={Star} className="card--star" alt=""/>
                 <span className="card--rating">{props.item.stats.rating} </span>
                 <span className="gray">({props.item.stats.reviewCount}) • </span>
                 <span className="gray">{props.item.location}</span>
